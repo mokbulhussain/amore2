@@ -205,7 +205,7 @@ label {
 
 /* 3. Header*/
 header{
-    background-image: url(../img/bg/bg.png);
+    background-image: url(../img/bg/BG.svg);
     background-size: cover;
     height: 747px;
     background-repeat: no-repeat;
@@ -655,7 +655,7 @@ footer{
     position: relative;
 }
 .footer-shape{
-    top: -100px;
+    top: -96px;
     left: 0;
     right: 0;
     position: absolute;
