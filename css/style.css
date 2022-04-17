@@ -299,9 +299,42 @@ section.feature {
     padding-left: 56px;
     padding-right: 56px;
 }
-.feature-img img {
-    width: 100%;
+.feature-colum{
+    padding-right: 100px;
+
 }
+.feature-img{
+    background-image: url(../img/feature/feature_bg.png);
+    background-size: cover;
+    height: 692px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.feature-div{
+    width: 322px;
+    height: 351px;
+    background: white;
+    float: right;
+    border-radius: 52px;
+    margin-top: 54px;
+    box-shadow: 30px 60px 60px 0 rgb(0 0 0 / 8%);
+    padding: 0px 27px;
+    overflow: hidden;
+}
+.feature-div ul li{
+    margin-top: 23px;
+}
+.feature-div ul{
+position: relative;
+animation: mymove 4s infinite;
+
+}
+
+@keyframes mymove {
+from {top: 0px;}
+to {top: -700px;}
+}
+
 .feature-content {
     padding-left: 14px;
 }
@@ -558,7 +591,20 @@ section.price {
 .price-icon img {
     width: 128px;
     height: 128px;
+    position: relative;
+    animation-name: priceIcon;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: .1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
 }
+
+@keyframes priceIcon {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+  }
+
 .price-icon {
     text-align: right;
 }
