@@ -47,6 +47,9 @@
 
 
 /* 2. Theme default css */
+html{
+    scroll-behavior: smooth;
+}
 .img {
 	max-width: 100%;
 	transition: all 0.3s ease-out 0s;
@@ -229,6 +232,7 @@ header{
 	color: #FFFFFF !important;
 	font-size: 14px;
 	font-family: PoppinsRegular;
+    line-height: 24px;
 }
 .nav-menu li a:hover {
 	font-weight: bold;
@@ -237,6 +241,11 @@ header{
 	color: #ffffff;
 	font-family: PoppinsSemiBold;
 	font-size: 14px;
+    padding: 0px;
+    margin-left: 24px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    padding-top: 5px;
 }
 .nav-menu-right li a:hover {
 	color: #ffffff;
@@ -246,7 +255,7 @@ header{
 
 /* 4. Header Banner */
 .banner {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .banner-fluid{
     padding: 0px 105px 0px 94px;
@@ -269,7 +278,7 @@ header{
 }
 .banner-content a {
     padding: 17px 44px;
-    background-image: linear-gradient(#F669D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
     border-radius: 62px;
     font-size: 16px;
     color: #ffffff;
@@ -326,7 +335,7 @@ section.feature {
 }
 .feature-div ul{
 position: relative;
-animation: mymove 4s infinite;
+animation: mymove 5s infinite;
 
 }
 
@@ -367,8 +376,7 @@ to {top: -700px;}
     text-decoration: none;
     font-family: PoppinsSemiBold;
     color: #ffffff;
-
-    background-image: linear-gradient(#F669D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
 }
 .feature-content a:hover {
     
@@ -591,19 +599,8 @@ section.price {
 .price-icon img {
     width: 128px;
     height: 128px;
-    position: relative;
-    animation-name: priceIcon;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: .1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; 
-}
 
-@keyframes priceIcon {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(-360deg);}
-  }
+}
 
 .price-icon {
     text-align: right;
@@ -638,7 +635,7 @@ p.price-subscribe-btn {
     text-decoration: none;
 }
 .price-subscribe-btn a:hover{
-    background-image: linear-gradient(to left, #FB8DC7, #F54EB4);
+    background: linear-gradient(227.39deg, #FB8DC7 7.37%, #F54EB4 113.39%);
     color: #ffffff;
 }
 
@@ -682,13 +679,13 @@ section.newsletter {
     text-decoration: none;
     font-family: 'PoppinsRegular';
     color: #ffffff;
-    background-image: linear-gradient(#F669D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
 }
 .newsletter-content a:hover {
     box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 10%);
 }
 .newsletter-content a.contact-us{
-    background-image: linear-gradient(#6546CB 0%, #974EF5 100%);
+    gradient(180deg, #6546CB -2.54%, #974EF5 98.71%);
     margin-left: 16px;
 }
 .newsletter-content a.contact-us:hover{
@@ -722,8 +719,9 @@ footer{
 }
 .footer-part1 p {
     color: #ffffff;
-    font-size: 16px;
-    font-family: 'GilroyRegular';
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
     margin-top: 24px;
 }
 .footer-part1 ul {
@@ -743,12 +741,13 @@ footer{
 }
 
 .footer-part1 ul li a:hover i {
-    color: #e6e6e6;
+    color: #d448b4;
 }
 .footer-part h3 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'PoppinsSemiBold';
+    line-height: 24px;
 }
 .footer-part ul li {
     margin-top: 10px;
@@ -756,8 +755,9 @@ footer{
 .footer-part ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    font-family: 'GilroyRegular';
+    font-size: 14px;
+    font-family: 'PoppinsRegular';
+    line-height: 24px;
 }
 .footer-part ul li a:hover {
    font-weight: 900;
@@ -767,10 +767,10 @@ footer{
     color: #ffffff;
     font-size: 14px;
     font-family: 'PoppinsRegular';
+    line-height: 24px;
 }
 .footer-subscribe {
     width: 256px;
-    background: red;
     height: 47px;
     background: #F2FCFB;
     text-align: center;
@@ -790,6 +790,18 @@ footer{
     padding: 5px 10px;
     background: transparent;
     color: #FB8DC7;
+}
+
+.footer-subscribe form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+    background: transparent;
 }
 
 
