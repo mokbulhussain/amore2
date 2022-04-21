@@ -19,7 +19,6 @@
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-
                         arrows: true,
                     }
                 },
@@ -34,14 +33,18 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots:true,
+                        arrows:false
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots:true,
+                        arrows:false,
                     }
                 }
             ]
