@@ -474,4 +474,10 @@
 		font-size: 28px;
 		line-height: 38px;
 	}
+	
+}
+@media only screen and (max-width: 382px) {
+	.banner-content a {
+		padding: 17px 70px;
+	}
 }
