@@ -34,7 +34,7 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots:true,
+
                         arrows:false
                     }
                 },
@@ -43,7 +43,6 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots:true,
                         arrows:false,
                     }
                 }

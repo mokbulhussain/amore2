@@ -481,12 +481,7 @@ section.client-section {
    /* box-shadow: -10px 80px 160px 0 rgb(1 47 16 / 8%); */
    box-shadow: 0px 10px 20px 0 rgb(1 47 16 / 8%);
 }
-.slick-active.middle .client-content {
-    box-shadow: 0px 10px 10px #dbdbdb; 
-}
-#slick-slide01 .client-content{
-    box-shadow: 0px 0px 5px rgb(149, 149, 149);
-}
+
 .client-content img {
     width: 100px;
 }
